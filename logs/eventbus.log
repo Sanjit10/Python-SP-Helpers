@@ -1,0 +1,6 @@
+2024-06-21 12:31:15,551 - DEBUG - configure_logging - Logger level set to: 10
+2024-06-21 12:31:15,551 - INFO - register_event - Registered event 'test_event' in channel 'default'.
+2024-06-21 12:31:15,551 - INFO - subscribe - Subscribed to event 'test_event' in channel 'default' with priority 100.
+2024-06-21 12:31:15,551 - INFO - emit - Emitted event 'test_key' in channel 'dataadd' with args () and kwargs {'data': {'action': 'add', 'data': 'test_value'}}.
+2024-06-21 12:31:15,551 - INFO - emit - Emitted event 'test_event' in channel 'default' with args () and kwargs {'data': {'key': 'test_key', 'value': 'test_value'}}.
+2024-06-21 12:31:15,551 - INFO - unsubscribe - Unsubscribed from event 'test_event' in channel 'default'.
