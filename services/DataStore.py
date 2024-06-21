@@ -1,11 +1,15 @@
+import sys
+import pathlib as path
+sys.path.append(str(path.Path(__file__).parent.resolve()))
+
 import threading
 from EventBus import EventBus
 from typing import Any
 import logging
-import pathlib as path
 import yaml
 
-FILE_path = path.Path(__file__).parent.resolve()
+
+FILE_path = path.Path(__file__).parent.parent.resolve()
 
 
 class SingletonMeta(type):

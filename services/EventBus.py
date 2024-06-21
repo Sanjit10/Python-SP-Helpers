@@ -4,8 +4,11 @@ import threading
 from typing import Callable
 import pathlib as path
 import yaml
+import sys
 
-FILE_path = path.Path(__file__).parent.resolve()
+
+sys.path.append(path.Path(__file__).parent.resolve())
+FILE_path = path.Path(__file__).parent.parent.resolve()
 
 class SingletonMeta(type):
     """ Metaclass for creating a Singleton instance. """
